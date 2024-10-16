@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
+import {IPost} from "./models/IPost";
+import {getPostsOfUser} from "./services/api.service";
+import Users from "./components/users/Users";
+import Posts from "./components/posts/Posts";
 
 function App() {
-  return (
-    <div className="App">
+  const [posts, setPosts] = useState<IPost[]>([]);
 
-    </div>
+    const lift = async (id: number) => {
+        setPosts(await getPostsOfUser(id));
+    };
+
+  return (
+      <div className="App">
+          <Users lift={lift}/>
+          <hr/>
+          <Posts posts={posts}/>
+      </div>
   );
 }
 

@@ -1,0 +1,11 @@
+.comment_container {
+    width: 24%;
+    padding: 25px;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}

@@ -11,7 +11,12 @@ const Post: FC<PostProps> = ({item}) => {
         <div className={styles.post_container}>
             <h4>{item.title}</h4>
             <p className={styles.text}>{item.body}</p>
-            <button onClick={() => {}}>
+            <div className={styles.reactions}>
+                <p>Views: {item.views}</p>
+                <p>Likes: {item.reactions.likes}</p>
+            </div>
+            <button onClick={() => {
+            }}>
                 View comments
             </button>
 

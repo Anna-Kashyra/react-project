@@ -5,7 +5,10 @@ import MainPage from "../pages/main/MainPage";
 import UsersPage from "../pages/users/UsersPage";
 import PostsPage from "../pages/posts/PostsPage";
 import CommentsPage from "../pages/comments/CommentsPage";
+import SingleUserPage from "../pages/single-user/SingleUserPage";
 import React from "react";
+import SingleUserPosts from "../pages/singl-user-posts/SingleUserPosts";
+import PostCommentsPage from "../pages/comments/PostsCommentsPage";
 
 export const routes = createBrowserRouter([
     {
@@ -21,9 +24,24 @@ export const routes = createBrowserRouter([
                 element: <UsersPage/>
             },
             {
-                path: 'posts',
-                element: <PostsPage/>
+                path: 'users/:id',
+                element: <SingleUserPage/>
             },
+            {
+                path: 'users/:id/posts',
+                element: <SingleUserPosts/>,
+                children: [
+                    {
+                        path: ':postId/comments',
+                        element: <PostCommentsPage/>
+                    },
+                ]
+            },
+            {
+                path: 'posts',
+                element: <PostsPage/>,
+            },
+
             {
                 path: 'comments',
                 element: <CommentsPage/>

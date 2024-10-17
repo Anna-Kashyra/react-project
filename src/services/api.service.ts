@@ -23,3 +23,13 @@ export const getComments = async (): Promise<IComment[]> => {
     let axiosResponse = await axiosInstance.get<BaseResponseType & {comments:IComment[]}>('/comments');
     return axiosResponse.data.comments
 }
+
+export const getPostsOfUser = async (id: number): Promise<IPost[]> => {
+    let axiosResponse = await axiosInstance.get(`/posts/user/${id}`);
+    return axiosResponse.data.posts;
+};
+
+export const getCommentsOfPost = async (postId: number): Promise<IComment[]> => {
+    const response = await axios.get(`https://dummyjson.com/posts/${postId}/comments`);
+    return response.data.comments;
+}

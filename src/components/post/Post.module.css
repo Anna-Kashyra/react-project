@@ -6,3 +6,8 @@
 .text {
     text-align: left;
 }
+
+.reactions {
+    display: flex;
+    justify-content: space-between;
+}

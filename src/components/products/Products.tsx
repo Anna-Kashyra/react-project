@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {productsObject} from "../../data";
-import {IProductModel} from "../models/IProductModel";
+import {IProductModel} from "../../models/IProductModel";
 import Product from "../product/Product";
 import "./Products.css"
 

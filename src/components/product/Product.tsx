@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {IProductModel} from "../models/IProductModel";
+import {IProductModel} from "../../models/IProductModel";
 import "./Product.css"
 
 type TypeProps = { item: IProductModel }

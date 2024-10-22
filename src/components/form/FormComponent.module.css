@@ -1,0 +1,29 @@
+.form_container {
+    margin: 100px auto 0;
+    padding: 0 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.input_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+label {
+    width: 45%;
+    display: block;
+}
+
+input {
+    display: block;
+    margin: 10px auto 0;
+}

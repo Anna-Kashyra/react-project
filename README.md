@@ -2,6 +2,11 @@
 
 https://github.com/Anna-Kashyra/react-project.git
 
+## Homework 4
+
+Взяти з dummyjson будь-який ендпоінт, який повертає багато об'єктів (products, carts, users etc...), та реалізувати пагінацію цих об'єктів.
+Крок пагінації ви визначаєте самостійно
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,7 +19,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## Don't forget to remove .idea files from git track.
-git rm .idea/ -r --cached
-git add -u .idea/
-git commit -m "Removed the .idea folder"

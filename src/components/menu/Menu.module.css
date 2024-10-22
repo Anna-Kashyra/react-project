@@ -1,0 +1,11 @@
+.menu_container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu_item {
+    list-style: none;
+    font-size: 22px;
+}

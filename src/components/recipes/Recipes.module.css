@@ -1,0 +1,33 @@
+.recipe_inner, .recipe_info_top, .recipe_info_middle {
+    display: flex;
+    gap: 30px;
+}
+
+.recipe_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.img {
+    width: 35%;
+}
+
+.recipe_info_top ul {
+    width: 50%;
+}
+
+.recipe_info_middle div {
+    width: 50%;
+    padding-left: 35px;
+}
+
+.recipe_info_bottom {
+    padding-left: 35px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

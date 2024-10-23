@@ -1,7 +1,6 @@
 import Joi from "joi";
 
 const userValidator = Joi.object({
-    id: Joi.number().required(),
     name: Joi.string().pattern(/^[A-Za-z]+ [A-Za-z]+$/).required().messages({
         'string.pattern.base': 'Name must consist of two words separated by a space'
     }),

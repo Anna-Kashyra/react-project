@@ -14,6 +14,7 @@ function App() {
 
   return (
       <div className="App">
+          <h2>All Users</h2>
           <Users lift={lift}/>
           <hr/>
           <Posts posts={posts}/>

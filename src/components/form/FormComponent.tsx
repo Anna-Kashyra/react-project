@@ -38,7 +38,7 @@ const FormComponent = () => {
 
                 <div className={styles.input_container}>
                     <label>Please enter a valid email address
-                        <input type="email" placeholder={'Email'} {...register('email')}/>
+                        <input type="email" placeholder={'Email '} {...register('email')}/>
                         {errors.email && <div>{errors.email.message}</div>}
                     </label>
                 </div>
